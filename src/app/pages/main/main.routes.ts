@@ -3,12 +3,12 @@ import { RouterModule, Routes } from "@angular/router";
 
 export const main: Routes = [
   {
-    path: 'main',
+    path: '',
     children: [
       {
         path: '',
-        loadComponent: () =>
-          import('./main.component').then((m) => m.MainComponent)
+        loadChildren: () =>
+          import('@pages/main/main.component').then((m) => m.MainComponent)
       }
     ]
   }

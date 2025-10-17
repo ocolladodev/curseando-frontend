@@ -1,6 +1,11 @@
-<div class="page">
-  <h1>Hola</h1>
-  <div class="container-fluid">
-    <router-outlet></router-outlet>
-  </div>
+<div class="min-h-screen flex flex-col bg-gray-50">
+  <!-- Navbar fijo arriba -->
+  <shared-navbar></shared-navbar>
+
+  <!-- Contenido principal -->
+  <main class="flex-1">
+    <div class="container mx-auto px-4 py-6">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
 </div>

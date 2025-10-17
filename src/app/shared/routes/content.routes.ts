@@ -6,7 +6,7 @@ export const content: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('@pages/main/main.routes').then(r => r.MainRoutingModule)
+        loadChildren: () => import('@pages/course-catalog/course-catalog.routes').then(r => r.CourseCatalogRoutingModule)
       }
     ]
   }
